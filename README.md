@@ -1,7 +1,7 @@
 emacs-kooten-theme
 =====================
 
-Dark color theme
+Dark color theme by [kootenpv](https://github.com/kootenpv/)
 
 ## Screenshot
 ![](https://raw.github.com/kootenpv/emacs-kooten-theme/master/python-screenshot.png)
@@ -29,7 +29,7 @@ Who cites themes from:
 
 - [Chris Kempson](https://github.com/ChrisKempson/Tomorrow-Theme)
 
--[Scott Frazer](https://github.com/scfrazer/.emacs.d/blob/master/themes/deeper-blue-theme.el)
+- [Scott Frazer](https://github.com/scfrazer/.emacs.d/blob/master/themes/deeper-blue-theme.el)
 
 - [Steve Purcell's `color-theme-sanityinc-tomorrow`](https://github.com/purcell/color-theme-sanityinc-tomorrow/)
 theme.
