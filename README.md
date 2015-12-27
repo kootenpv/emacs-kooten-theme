@@ -4,8 +4,7 @@ emacs-kooten-theme
 Dark color theme by [kootenpv](https://github.com/kootenpv/)
 
 ## Screenshot
-![](https://raw.github.com/kootenpv/emacs-kooten-theme/master/python-screenshot.png)
-
+<img src="https://raw.github.com/kootenpv/emacs-kooten-theme/master/python-screenshot.png" width="50%"></img>
 
 ## Installation
 If you're all set up to use [MELPA](http://melpa.milkbox.net/#/getting-started), simply
