@@ -628,9 +628,4 @@
 
 (provide-theme 'kooten)
 
-;; Local Variables:
-;; rainbow-mode: t
-;; hl-sexp-mode: nil
-;; End:
-
 ;;; kooten-theme.el ends here
