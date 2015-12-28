@@ -100,8 +100,8 @@
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
    ;; Flymake
-   `(flymake-warnline ((,class (:underline (:style underline :color ,yellow) :background ,background))))
-   `(flymake-errline ((,class (:underline (:style underline :color ,red) :background ,background))))
+   `(flymake-warnline ((,class (:underline (:style line :color ,yellow) :background ,background))))
+   `(flymake-errline ((,class (:underline (:style line :color ,red) :background ,background))))
 
    ;; Clojure errors
    `(clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
