@@ -69,7 +69,7 @@
 
   (custom-theme-set-faces
    'kooten
-   '(default ((t (:family "Consolas" :foundry "nil" :width normal :height 180 :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "white" :background "#14151E" :stipple nil :inherit nil))))
+   '(default ((t (:family "Consolas" :foundry "nil" :width normal :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "white" :background "#14151E" :stipple nil :inherit nil))))
    `(bold ((,class (:weight bold))))
    `(bold-italic ((,class (:slant italic :weight bold))))
    `(underline ((,class (:underline t))))
