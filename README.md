@@ -1,7 +1,7 @@
 emacs-kooten-theme
 =====================
 
-Dark color theme by [kootenpv](https://github.com/kootenpv/)
+Dark color theme by [kootenpv](https://github.com/kootenpv/). The idea is to have high contrasts of colors _between_ types, while not allowing the collors themselves to be very saturated/bright. Mild versions of the colors.
 
 ## Screenshot
 <img src="https://raw.github.com/kootenpv/emacs-kooten-theme/master/python-screenshot.png" width="50%"></img>
