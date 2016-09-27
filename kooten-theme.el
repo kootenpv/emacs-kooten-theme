@@ -68,7 +68,7 @@
        (blue "DeepSkyBlue1"))
 
   (custom-theme-set-faces
-   'kooten3
+   'kooten
    '(default ((t (:family "Consolas" :foundry "nil" :width normal :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "white" :background "#14151E" :stipple nil :inherit nil))))
    `(bold ((,class (:weight bold))))
    `(bold-italic ((,class (:slant italic :weight bold))))
@@ -609,7 +609,7 @@
    `(term-color-white   ((,class (:foreground ,background :background ,background)))))
 
   (custom-theme-set-variables
-   'kooten3
+   'kooten
    `(fci-rule-color ,current-line)
    `(vc-annotate-color-map
      '((20  . ,red)
