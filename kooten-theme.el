@@ -68,7 +68,7 @@
        (blue "DeepSkyBlue1"))
 
   (custom-theme-set-faces
-   'kooten
+   'kooten3
    '(default ((t (:family "Consolas" :foundry "nil" :width normal :weight normal :slant normal :underline nil :overline nil :strike-through nil :box nil :inverse-video nil :foreground "white" :background "#14151E" :stipple nil :inherit nil))))
    `(bold ((,class (:weight bold))))
    `(bold-italic ((,class (:slant italic :weight bold))))
@@ -93,6 +93,7 @@
    `(shadow ((,class (:foreground ,comment))))
    `(success ((,class (:foreground "SeaGreen2"))))
    `(error ((,class (:foreground ,red))))
+   ;;`(highlight-indentation-face ((t (:foreground "black" :height 54 :family "Arial"))))
    `(warning ((,class (:foreground ,orange))))
 
    ;; Flycheck
@@ -100,8 +101,23 @@
    `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
 
    ;; Flymake
-   `(flymake-warnline ((,class (:underline (:style line :color ,yellow) :background ,background))))
-   `(flymake-errline ((,class (:underline (:style line :color ,red) :background ,background))))
+   ;; `(flymake-warnline ((,class (:underline (:style line :color ,yellow)))))
+   ;; `(flymake-errline ((,class (:underline (:style line :color ,red)))))
+  `(flymake-errline
+     ((((supports :underline (:style line :color ,red)))
+       (:underline (:style line :color ,red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,red :weight bold :underline t))))
+   `(flymake-warnline
+     ((((supports :underline (:style line :color ,orange)))
+       (:underline (:style line :color ,orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,orange :weight bold :underline t))))
+   `(flymake-infoline
+     ((((supports :underline (:style line :color ,green)))
+       (:underline (:style line :color ,green)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,green :weight bold :underline t))))
 
    ;; Clojure errors
    `(clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
@@ -183,7 +199,7 @@
    `(mode-line-emphasis ((,class (:foreground ,foreground :slant italic))))
    `(mode-line-highlight ((,class (:foreground ,orange :box nil))))
    `(minibuffer-prompt ((,class (:foreground ,blue))))
-   `(region ((,class (:background ,selection))))
+   `(region ((,class (:background ,"#103050"))))
    `(secondary-selection ((,class (:background ,current-line))))
 
    `(header-line ((,class (:inherit mode-line :foreground ,orange :background nil))))
@@ -593,7 +609,7 @@
    `(term-color-white   ((,class (:foreground ,background :background ,background)))))
 
   (custom-theme-set-variables
-   'kooten
+   'kooten3
    `(fci-rule-color ,current-line)
    `(vc-annotate-color-map
      '((20  . ,red)
