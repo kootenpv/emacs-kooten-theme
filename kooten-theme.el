@@ -97,12 +97,18 @@
    `(warning ((,class (:foreground ,orange))))
 
    ;; Flycheck
-   `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
-   `(flycheck-warning ((,class (:underline (:style wave :color ,orange)))))
+  `(flycheck-error
+     ((((supports :underline (:style line :color ,red)))
+       (:underline (:style line :color ,red)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,red :weight bold :underline t))))
+   `(flycheck-warning
+     ((((supports :underline (:style line :color ,orange)))
+       (:underline (:style line :color ,orange)
+                   :inherit unspecified :foreground unspecified :background unspecified))
+      (t (:foreground ,orange :weight bold :underline t))))
 
    ;; Flymake
-   ;; `(flymake-warnline ((,class (:underline (:style line :color ,yellow)))))
-   ;; `(flymake-errline ((,class (:underline (:style line :color ,red)))))
   `(flymake-errline
      ((((supports :underline (:style line :color ,red)))
        (:underline (:style line :color ,red)
