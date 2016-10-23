@@ -59,6 +59,7 @@
        (block-background (if 256color "#262626" "#1F2232"))
        (selection "#103050")
        (foreground "white")
+       (black "black")
        (comment "#FF7177")
        (red "#d54e53")
        (orange "goldenrod")
@@ -273,6 +274,29 @@
    `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,red))))
    `(undo-tree-visualizer-register-face ((,class (:foreground ,yellow))))
 
+   ;; company
+   ;; background: gray0
+   `(company-tooltip ((,class (:foreground ,comment, :background ,black))))
+   `(company-tooltip-annotation ((,class (:foreground ,blue :weight bold :inherit company-tooltip))))
+
+   `(company-tooltip-selection ((,class (:inherit company-tooltip :foreground ,foreground ))))
+   `(company-tooltip-common ((,class (:inherit company-tooltip :foreground ,blue  ))))
+   `(company-tooltip-common-selection ((,class (:inherit company-tooltip :foreground ,foreground  ))))
+   `(company-tooltip-mouse ((,class (:inherit company-tooltip :foreground ,foreground  ))))
+   `(company-tooltip-search ((,class (:inherit company-tooltip :foreground ,foreground  ))))
+
+   `(company-scrollbar-bg ((,class (:inherit company-tooltip :foreground ,orange ))))
+   `(company-scrollbar-fg ((,class (:inherit company-tooltip :foreground ,black :background ,foreground ))))
+   `(company-echo ((,class (:inherit company-tooltip :foreground ,green ))))
+
+   `(company-preview ((,class (:inherit company-tooltip :foreground ,black :background ,foreground ))))
+   `(company-preview-common ((,class (:inherit company-preview :foreground ,black ))))
+
+   `(company-echo-common ((,class (:inherit company-tooltip :foreground ,background ))))
+   `(company-echo-preview ((,class (:inherit company-tooltip :foreground ,background ))))
+   `(company-echo-preview-common ((,class (:inherit company-tooltip :foreground ,background ))))
+   `(company-echo-preview-search ((,class (:inherit company-tooltip :foreground ,background ))))
+
    ;; dired+
    `(diredp-compressed-file-suffix ((,class (:foreground ,blue))))
    `(diredp-deletion ((,class (:inherit error :inverse-video t))))
@@ -439,11 +463,11 @@
    `(message-separator ((,class (:foreground ,orange))))
 
    ;; Jabber
-   `(jabber-chat-prompt-local ((,class (:foreground ,yellow))))
+   `(jabber-chat-prompt-local ((,class (:foreground ,blue))))
    `(jabber-chat-prompt-foreign ((,class (:foreground ,orange))))
    `(jabber-chat-prompt-system ((,class (:foreground ,yellow :weight bold))))
-   `(jabber-chat-text-local ((,class (:foreground ,yellow))))
-   `(jabber-chat-text-foreign ((,class (:foreground ,orange))))
+   `(jabber-chat-text-local ((,class (:foreground ,aqua))))
+   `(jabber-chat-text-foreign ((,class (:foreground ,yellow))))
    `(jabber-chat-text-error ((,class (:foreground ,red))))
 
    `(jabber-roster-user-online ((,class (:foreground ,green))))
